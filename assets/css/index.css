@@ -807,3 +807,17 @@ footer{
     cursor: pointer;
 }
 
+.siconser{ /*賣家搜尋圖示*/
+    width: 15px;
+    height: 15px;
+    padding: 30px;
+    position: absolute;
+    margin: 0px -60px;
+}
+
+.siconbox { /*賣家右上角搜尋欄*/
+    width: 200px;
+    height: 33px;
+    margin: 20px -250px;
+    position: absolute;
+}
