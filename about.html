@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <meta name="viewport" content="width=device-width,intial scale=1">
+</head>
+
+<body>
+    <section style="display: flex;justify-content: space-between;">
+        <div id="mySidepanel" class="sidepanel">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="about.html">關於我們</a>
+            <a href="index.html">首頁</a>
+            <a href="item.html#top">上衣</a>
+            <a href="item.html#coat">外套</a>
+            <a href="item.html#button">褲子&裙子</a>
+            <a href="item.html#accessory">配件</a>
+            <br><br><br><br>
+            <hr>
+            <a href="login.html">登入</a>
+            <a href="enroll.html">註冊</a>
+            <a href="#">登出</a>
+        </div>
+
+        <button class="openbtn" onclick="openNav()">&#9776; </button>
+        <script>
+            function openNav() {
+                document.getElementById("mySidepanel").style.width = "250px";
+            }
+            function closeNav() {
+                document.getElementById("mySidepanel").style.width = "0";
+            }
+        </script>
+        <img class="logo" src="./assets/images/logo.png" alt="">
+        <h1 class="mw">關於我們</h1>
+        <form action="post">
+            <a href="center.html"><img class="icon" src="./assets/images/me.png" alt="個資"></a>
+            <a href="shopcar.html"><img class="icon" src="./assets/images/car.png" alt="購物車"></a>
+            <a href="#">
+            <input type="search" class="iconbox">
+            <botton><img class="iconser" src="./assets/images/search.png" alt="搜尋"></botton>
+            </a>
+        </form>
+    </section>
+    <hr class="titlehr">
+    <div>
+    <div class="container1" style="column-count: 3;"> <!--甲班照片-->
+        <div class="word">
+            <img src="./assets/images/ling.jpg" alt="">
+            <div class="review">
+                <div class="review">
+                    <p class="line">心得</p><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat accusantium et earum laborum
+                        inventore facere! Sit unde eaque natus quo corporis iure quod rerum, consectetur inventore
+                        illum, nisi, labore voluptate.</p>
+                </div>
+            </div>
+            <b>
+                <p>李靖苓<br>甲班<br>前端</p>
+            </b>
+        </div>
+        <div class="word">
+            <img class="uspic" src="https://picsum.photos/350/500" alt="">
+            <b>
+                <p>陳藝瑄<br>甲班<br>前端</p>
+            </b>
+            <div class="review">
+                <p class="line">心得</p><br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam nostrum quos, asperiores, atque sequi
+                    pariatur consectetur sit ut recusandae similique tenetur facilis quidem ea. Porro officiis
+                    reprehenderit perspiciatis amet dicta?</p>
+            </div>
+        </div>
+        <div class="word">
+            <img class="uspic" src="https://picsum.photos/350/500" alt="">
+            <b>
+                <p>林芷妤<br>甲班<br>前端</p>
+            </b>
+            <div class="review">
+                <p class="line">心得</p><br>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro officiis iste non quo fuga
+                    repellendus commodi itaque, sunt eius. Quisquam nihil, incidunt repellendus facere asperiores quia
+                    expedita ratione sapiente dignissimos?</p>
+            </div>
+        </div>
+    </div>
+    <div class="container1" style="column-count: 3;"> <!--乙班照片-->
+        <div class="word">
+            <img src="./assets/images/lai.jpg" alt="">
+            <div class="review">
+                <div class="review">
+                    <p class="line">心得</p><br>
+                    <p>在這次甲乙班的合作製作購物網站中，其實非常具有挑戰性，因為不曾嘗試過，從一開始的理想架構、討論到因時間緊迫而做系統上的刪減，其實都是要非常快速的，團體合作也相當重要，而我的組員們都是很會時間管理的人，非常幸運可以跟他們一起努力完成！</p>
+                </div>
+            </div>
+            <b>
+                <p>賴苡柔<br>乙班<br>後端</p>
+            </b>
+        </div>
+        <div class="container1" style="column-count: 3;"> <!--乙班照片-->
+            <div class="word">
+                <img src="./assets/images/yee.jpg" alt="">
+                <div class="review">
+                    <div class="review">
+                        <p class="line">心得</p><br>
+                        <p>這次的期末發表真的是一個大挑戰！尤其時間又非常短暫，老實說心裡還真的很沒安全感。但是我很幸運擁有很棒的夥伴們，陪我一起奮鬥！我相信透過這次的發表，我們所有人的能力都能向前邁進一大步！讓我們一起加油吧！</p>
+                    </div>
+                </div>
+                <b>
+                    <p>沈宜蓁<br>乙班<br>後端</p>
+                </b>
+            </div>
+            <div class="container1" style="column-count: 3;"> <!--乙班照片-->
+                <div class="word">
+                    <img src="./assets/images/dai.jpg" alt="">
+                    <div class="review">
+                        <div class="review">
+                            <p class="line">心得</p><br>
+                            <p>終於還是來到了要實作的一天<br>自從聽到老師說要實作後一直很抗拒<br>到現在也依舊覺得很可怕<br>怕自己做不完，也怕自己做不好<br>希望能在時間內做好做完！</p>
+                        </div>
+                    </div>
+                    <b>
+                        <p>戴妤蓁<br>乙班<br>後端</p>
+                    </b>
+                </div>
+            </div>
+        </div>
+    </div>
+        <footer>
+            <p>Copyright &copy Miss Wise</p>
+        </footer>        
+    </body>
+</html>

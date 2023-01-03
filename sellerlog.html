@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <meta name="viewport" content="width=device-width,intial scale=1">
+</head>
+</head>
+<body>
+    <nav>
+        <main>
+            <section style="display: flex;justify-content: space-between;">
+                <div id="mySidepanel" class="sidepanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <br>
+                    <a href="sellerlog.html">登入</a>
+                    <a href="unpd.html">未上架</a>
+                    <a href="onpd.html">已上架</a>
+                    <a href="index.html">登出</a>
+                </div>
+
+                <button class="openbtn" onclick="openNav()">&#9776; </button>
+                <script>
+                    function openNav() {
+                        document.getElementById("mySidepanel").style.width = "250px";
+                    }
+                    function closeNav() {
+                        document.getElementById("mySidepanel").style.width = "0";
+                    }
+                </script>
+                <img class="logo" src="./assets/images/logo.png" alt="">
+                <h1 class="smw">登入</h1>
+                <form action="post">
+                    <a href="seeorder.html"><img class="icon" src="./assets/images/car.png" alt="購物車"></a>
+                </form>
+            </section>
+    </nav>
+    <hr class="titlehr"><br>
+    <div class="back">
+        <form action="post" class="log">
+            <br><br><br><br><br>
+            <p>帳號: <input type="text" name="address" value=""></p>
+            <br>
+            <p>密碼: <input type="password" name="password" value=""></p>
+            <br>
+            <a href="onpd.html"><input class="login" type="button" value="登入"></a>
+        </form>
+    </div>
+</body>
+</html>

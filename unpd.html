@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <meta name="viewport" content="width=device-width,intial scale=1">
+</head>
+<body>
+    <nav>
+        <main>
+            <section style="display: flex;justify-content: space-between;">
+                <div id="mySidepanel" class="sidepanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <br>
+                    <a href="sellerlog.html">登入</a>
+                    <a href="unpd.html">未上架</a>
+                    <a href="onpd.html">已上架</a>
+                    <a href="sellerlog.html">登出</a>
+                </div>
+
+                <button class="openbtn" onclick="openNav()">&#9776; </button>
+                <script>
+                    function openNav() {
+                        document.getElementById("mySidepanel").style.width = "250px";
+                    }
+                    function closeNav() {
+                        document.getElementById("mySidepanel").style.width = "0";
+                    }
+                </script>
+                <img class="logo" src="./assets/images/logo.png" alt="">
+                <h1 class="smw">Miss Wise</h1>
+                <form action="post">
+                    <a href="seeorder.html"><img class="icon" src="./assets/images/car.png" alt="購物車"></a>
+                </form>
+            </section>
+    </nav>
+    <hr class="titlehr"><br>
+        <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>
+    </section>
+    <a href="sellerunpd1.html"><img class="floatshop" src="./assets/images/add.png" alt=""></a>
+    <section>
+        <h1>未上架商品</h1>
+        <div class="container1" style="column-count: 3;">
+            <a href="sellerunpd.html">
+                <div class="word">
+                    <img src="./assets/images/Bbrathin_1.jpg" alt="">
+                        <br><b>
+                            <p>細肩帶發熱bra top（黑）<br>NT.290</p>
+                        </b></a>
+                </div>
+            </a>
+            <a href="#">
+                <div class="word">
+                    <img src="./assets/images/Wlk_1.jpg" alt="">
+                        <br><b>
+                            <p>荷葉領珍珠排扣襯衫（白）<br>NT.450</p>
+                        </b></a>
+                </div>
+            </a>
+            <a href="#">
+                <div class="word">
+                    <img src="./assets/images/whiteshirt1.JPG" alt="">
+                        <br><b>
+                            <p>大尖領白色襯衫（白）<br>NT.430</p>
+                        </b></a>
+                </div>
+            </a>
+        </div>
+        <div class="container1" style="column-count: 3;">
+            <a href="#">
+                <div class="word">
+                    <img src="./assets/images/plaidcoat1.JPG" alt="">
+                    <br><b>
+                        <p>菱紋鋪棉外套（黑）<br>NT.990</p>
+                    </b>
+                </div>
+            </a>
+            <a href="clothes3.html">
+                <div class="word">
+                    <img src="./assets/images/jacket_1.jpg" alt="">
+                    <br><b>
+                        <p>氣質長款風衣（附腰帶）<br>NT.890</p>
+                    </b>
+                </div>
+            </a>
+            <a href="#">
+                <div class="word">
+                    <img src="./assets/images/Bbc_1.jpg" alt="">
+                    <br><b>
+                        <p>毛呢棒球外套（黑）<br>NT.750</p>
+                    </b>
+                </div>
+            </a>
+        </div>
+        <div class="container1" style="column-count: 3;">
+            <a href="#">
+                <div class="word">
+                    <img src="./assets/images/plaidshorts1.jpg" alt="">
+                    <br><b>
+                        <p>菱格紋鋪棉短褲 ( 軍綠 )<br>NT.550</p>
+                    </b>
+                </div>
+            </a>
+            <a href="#">
+                <div class="word">
+                    <img src="./assets/images/toppants_1.jpg" alt="">
+                    <br><b>
+                        <p>顯瘦TOP長腿庫  ( 黑 )<br>NT.590</p>
+                    </b>
+                </div>
+            </a>
+            <a href="#">
+                <div class="word">
+                    <img src="./assets/images/changejeans_1.jpg" alt="">
+                    <br><b>
+                        <p>漸層刷色牛仔褲 ( 藍 )<br>NT.590</p>
+                    </b>
+                </div>
+            </a>
+        </div>
+        <div class="container1" style="column-count: 3;">
+            <a href="#">
+                <div class="word">
+                    <img src="./assets/images/shortskirt1.jpg" alt="">
+                        <br><b>
+                            <p>毛絨修身短裙 ( 黃 )<br>NT.450</p>
+                        </b>
+                </div>
+            </a>
+            <a href="#">
+                <div class="word">
+                    <img class="uspic" src="./assets/images/Wlongskirt_1.jpg" alt="">
+                        <br><b>
+                            <p>拼接荷葉長裙 ( 白 )<br>NT.510</p>
+                        </b>
+                </div>
+            </a>
+            <a href="#">
+                <div class="word">
+                    <img src="./assets/images/longskirt1.jpg" alt="">
+                        <br><b>
+                            <p>華夫格休閒長裙 ( 灰 )<br>NT.430</p>
+                        </b>
+                </div>
+            </a>
+        </div>
+        <div class="container1" style="column-count: 3;">
+            <a href="#">
+                <div class="word">
+                    <img src="./assets/images/hairband1.jpg" alt="">
+                    <br><b>
+                        <p> 寬版髮箍 ( 紫 )<br>NT.120</p>
+                    </b>
+                </div>
+            </a>
+            <a href="#">
+                <div class="word">
+                    <img class="uspic" src="./assets/images/pearlring1.jpg" alt="">
+                    <br><b>
+                        <p>小珍珠戒指 ( 珍珠 ) <br>NT.220</p>
+                    </b>
+                </div>
+            </a>
+            <a href="#">
+                <div class="word">
+                    <img src="./assets/images/furryhat1.jpg" alt="">
+                    <br><b>
+                    <p>毛絨絨鐘型帽 ( 米白 )<br>NT.390</p>
+                    </b>
+                </div>
+            </a>
+        </div>
+    </section>
+</body>
+</html>

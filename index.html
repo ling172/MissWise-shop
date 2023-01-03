@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <meta name="viewport" content="width=device-width,intial scale=1">
+</head>
+
+<body>
+    <nav>
+        <main>
+            <section style="display: flex;justify-content: space-between;">
+                <div id="mySidepanel" class="sidepanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <br>
+                    <a href="about.html">關於我們</a>
+                    <a href="index.html">首頁</a>
+                    <a href="item.html#top">上衣</a>
+                    <a href="item.html#coat">外套</a>
+                    <a href="item.html#button">褲子&裙子</a>
+                    <a href="item.html#accessory">配件</a>
+                    <br><br>
+                    <hr>
+                    <a href="login.html">登入</a>
+                    <a href="enroll.html">註冊</a>
+                    <a href="#contact">登出</a>
+                    <a href="onpd.html">賣家</a>
+                </div>
+
+                <button class="openbtn" onclick="openNav()">&#9776; </button>
+                <script>
+                    function openNav() {
+                        document.getElementById("mySidepanel").style.width = "250px";
+                    }
+                    function closeNav() {
+                        document.getElementById("mySidepanel").style.width = "0";
+                    }
+                </script>
+                <img class="logo" src="./assets/images/logo.png" alt="">
+                <h1 class="mw">Miss Wise</h1>
+
+                <form action="post">
+                    <a href="center.html"><img class="icon" src="./assets/images/me.png" alt="個資"></a>
+                    <a href="shopcar.html"><img class="icon" src="./assets/images/car.png" alt="購物車"></a>
+                    <input type="search" class="iconbox">
+                    <botton><img class="iconser" src="./assets/images/search.png" alt="搜尋"></botton>
+                </form>
+            </section>
+    </nav>
+    <hr class="titlehr"><br>
+    <section id="time"> <!--幻燈片-->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="https://picsum.photos/600/200" style="width:100%">
+                <div class="text">Caption Text</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="https://picsum.photos/600/200" style="width:100%">
+                <div class="text">Caption Two</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="https://picsum.photos/600/200" style="width:100%">
+                <div class="text">Caption Three</div>
+            </div>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <script>
+            let slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>
+    </section>
+    <section>
+        <h2>🔥熱銷商品</h2>
+        <div class="container" style="column-count: 2;">
+            <div class="photo">
+                <a href="pd1.html">
+                    <img class="pd0" src="./assets/images/Bshorts9_1.jpg" alt=""> <!--商品圖-->
+                    <h3 class="productname">經典襯衫短褲(棕黑)</h3> 
+                    <h3 class="productname">NT. 450</h3>
+                </a> <!--改價錢-->
+            </div>
+            <div class="photo">
+                <a href="pd2.html"><img class="pd0" src="./assets/images/Wjeans8_1.jpg" alt=""> <!--商品圖-->
+                    <h3 class="productname">挺料割破牛仔褲(白色)</h3>
+                    <h3 class="productname">NT. 500</h3>
+                </a> <!--改價錢-->
+            </div>
+        </div>
+        <div class="container" style="column-count: 2;">
+            <div class="photo">
+                <a href="pd3.html"><img src="./assets/images/Bbrathin_1.jpg" alt=""> <!--商品圖-->
+                    <h3 class="productname">細肩發熱bra top(黑色)</h3> 
+                    <h3 class="productname">NT. 250</h3>
+                </a> <!--改價錢-->
+            </div>
+            <div class="photo">
+                <a href="pd4.html"><img src="./assets/images/GT_1.jpg" alt=""> <!--商品圖-->
+                    <h3 class="productname">字母印花大學T(灰色)</h3> 
+                    <h3 class="productname">NT. 599</h3>
+                </a> <!--改價錢-->
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <footer id="contact">
+        <p>Copyright &copy Miss Wise</p>
+    </footer>
+</body>
+</html>

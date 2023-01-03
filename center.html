@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <meta name="viewport" content="width=device-width,intial scale=1">
+</head>
+
+<body>
+    <nav>
+        <main>
+            <section style="display: flex;justify-content: space-between;">
+                <div id="mySidepanel" class="sidepanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="index.html">首頁</a>
+                    <a href="#top">上衣</a>
+                    <a href="#coat">外套</a>
+                    <a href="#button">褲子</a>
+                    <a href="#skirt">裙子</a>
+                    <a href="#accessory">配件</a>
+                    <br><br><br><br>
+                    <hr>
+                    <a href="login.html">登入</a>
+                    <a href="enroll.html">註冊</a>
+                    <a href="">登出</a>
+                </div>
+
+                <button class="openbtn" onclick="openNav()">&#9776; </button>
+                <script>
+                    function openNav() {
+                        document.getElementById("mySidepanel").style.width = "250px";
+                    }
+                    function closeNav() {
+                        document.getElementById("mySidepanel").style.width = "0";
+                    }
+                </script>
+                <img class="logo" src="./assets/images/logo.png" alt="">
+                <h1 class="mw">會員中心</h1>
+                <form action="post">
+                    <a href="center.html"><img class="icon" src="./assets/images/me.png" alt="個資"></a>
+                    <a href="shopcar.html"><img class="icon" src="./assets/images/car.png" alt="購物車"></a>
+                    <a href="#">
+                    <input type="search" class="iconbox">
+                    <botton><img class="iconser" src="./assets/images/search.png" alt="搜尋"></botton>
+                    </a>
+                </form>
+            </section>
+    </nav>
+    <hr class="titlehr"><br>
+    <section>
+        <p class="membertitle"><a href="#information">個人資訊</a> <a href="order.html">訂單</a> <a href="track.html">追蹤</p>
+        </a><br>
+        <div id="information">
+            <p class="membername"><img class="memberphoto" src="./assets/images/memeber1.png" alt=""> 小林退熱貼</p><br>
+            <p class="memberitem">✏️編輯會員資料</p><br>
+            <p class="memberitem">姓名: <input type="text" name="name" value=""></p><br>
+            <p class="memberitem">信箱: <input type="email" name="email" value=""></p><br>
+            <p class="memberitem">密碼: <input type="password" name="password" value=""></p><br>
+            <p class="memberitem">電話: <input type="text" name="phone" value=""></p><br>
+            <p class="memberitem">地址: <input type="text" name="site" value=""></p><br>
+            <p class="memberitem">載具: <input type="text" name="invoice" value=""></p><br>
+        </div>
+    </section>
+</body>
+
+</html>

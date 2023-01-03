@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <script>
+        $(function(){
+            $(".myrating").starRating({
+            totalStars: 5,
+            starShape: 'rounded',
+            starSize: 40,
+            emptyColor: 'lightgray',
+            hoverColor: 'salmon',
+            activeColor: 'crimson',
+            useGradient: false
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <nav>
+        <main>
+            <section style="display: flex;justify-content: space-between;">
+                <div id="mySidepanel" class="sidepanel">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="about.html">關於我們</a>
+                    <a href="index.html">首頁</a>
+                    <a href="item.html#top">上衣</a>
+                    <a href="item.html#coat">外套</a>
+                    <a href="item.html#button">褲子&裙子</a>
+                    <a href="item.html#accessory">配件</a>
+                    <br><br><br><br>
+                    <hr>
+                    <a href="login.html">登入</a>
+                    <a href="enroll.html">註冊</a>
+                    <a href="#">登出</a>
+                </div>
+
+                <button class="openbtn" onclick="openNav()">&#9776; </button>
+                <script>
+                    function openNav() {
+                        document.getElementById("mySidepanel").style.width = "250px";
+                    }
+                    function closeNav() {
+                        document.getElementById("mySidepanel").style.width = "0";
+                    }
+                </script>
+                <img class="logo" src="./assets/images/logo.png" alt="">
+                <h1 class="mw">Miss Wise</h1>
+
+                <form action="post">
+                    <a href="center.html"><img class="icon" src="./assets/images/me.png" alt="個資"></a>
+                    <a href="shopcar.html"><img class="icon" src="./assets/images/car.png" alt="購物車"></a>
+                    <input type="search" class="iconbox">
+                    <botton><img class="iconser" src="./assets/images/search.png" alt="搜尋"></botton>
+                </form>
+            </section>
+    </nav>
+    <hr class="titlehr"><br>
+    <section>
+        <p class="membertitle"><a href="center.html">個人資訊</a> <a href="order.html">訂單</a> <a href="track.html">追蹤</p></a><br>
+        <div id="order">
+            <table class="option">
+                <tr>
+                    <td class="ordertext"><a href="order.html">待付款</a></td>
+                    <td class="ordertext"><a href="finished.html">已完成</a></td>
+                    <td class="ordertext"><a href="#evaluation">我的評價</a></td>
+                </tr>
+            </table>
+        </div>
+        <form action="post">
+            <section>
+                <div class="shopcontainer">
+                    <h3 class="h3title">編號</h3> <!--改編號-->
+                    <hr>
+                    <div class="shopscreen">
+                        <img src="https://picsum.photos/150/200" style="float:left;"> <!--商品圖-->
+                        <div style="font-size: 20px;">
+                            <p>商品名稱</p>    <!--改商品名稱-->
+                            <p>價錢:NT.200</p> <!--改價錢-->
+                            <p>數量: 1</p> <!--數量-->
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="shopscreen" style="clear: both;">
+                        <img src="https://picsum.photos/150/200" style="float:left;"> <!--商品圖-->
+                        <div style="font-size: 20px;">
+                            <p>商品名稱</p>    <!--改商品名稱-->
+                            <p>價錢:NT.200</p> <!--改價錢-->
+                            <p>數量: 1</p> <!--數量-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr class="cutline">
+            <h2 id="evaluation">我的評價</h2>
+            <section>
+                <div class="shopcontainer">
+                    <h3 class="h3title">編號</h3> <!--改編號-->
+                    <hr>
+                    <div class="myevaluation" style="clear: both;">
+                        <img src="https://picsum.photos/150/200" style="float:left;"> <!--匯入商品圖-->
+                        <div>
+                            <span class="star-rating">
+                                <input type="radio" name="rating" value="1"><i></i>
+                                <input type="radio" name="rating" value="2"><i></i>
+                                <input type="radio" name="rating" value="3"><i></i>
+                                <input type="radio" name="rating" value="4"><i></i>
+                                <input type="radio" name="rating" value="5"><i></i>
+                            </span>
+                            <p>商品名稱</p>    <!--改商品名稱-->
+                            <p>我的評價:</p>
+                            <textarea name="" id="" cols="30" rows="6" ><!--在此填入評論--></textarea> 
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="myevaluation" style="clear: both;">
+                        <img src="https://picsum.photos/150/200" style="float:left;"> <!--匯入商品圖-->
+                        <div>
+                            <span class="star-rating">
+                                <input type="radio" name="rating" value="1"><i></i>
+                                <input type="radio" name="rating" value="2"><i></i>
+                                <input type="radio" name="rating" value="3"><i></i>
+                                <input type="radio" name="rating" value="4"><i></i>
+                                <input type="radio" name="rating" value="5"><i></i>
+                            </span>
+                            <p>商品名稱</p>    <!--改商品名稱-->
+                            <p>我的評價:</p>
+                            <textarea name="" id="" cols="30" rows="6" ><!--在此填入評論--></textarea> 
+                        </div>
+                    </div>
+                </div>    
+            </section>
+        </form>
+    
+</body>
+</html>
