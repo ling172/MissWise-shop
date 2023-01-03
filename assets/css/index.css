@@ -352,13 +352,15 @@ a{ /*隱藏超連結底線*/
     display: none;
 }
 
-.timee{
-    background-color: white;
-}
-
 .mySlides img{
     height: 500px;
     width: 820px;
+}
+
+.timee{
+    width: 1260px;
+    margin: auto;
+    background-color: rgba(60, 46, 40, 0.3);
 }
 
 /* Slideshow container */
